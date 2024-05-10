@@ -2,7 +2,7 @@
 import { trpc } from "../_trpc/client";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { useState } from "react";
+import React, { useState } from "react";
 import PokedexTable from "../compoenents/pokedex-table";
 import { IconButton } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";

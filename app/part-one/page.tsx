@@ -2,13 +2,13 @@
 import { trpc } from "../_trpc/client";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-import { useState } from "react";
+import React, { useState } from "react";
 import PokemonRow from "../compoenents/pokemon-row";
 import { IconButton } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import Link from "next/link";
 
-export default function partOne(): React.ReactElement {
+export default function PartOne(): React.ReactElement {
   const pokemonNames = trpc.getAllPokemonNames.useQuery();
   const pokemonOptions = pokemonNames.data ? pokemonNames.data : [];
 
