@@ -3,7 +3,7 @@ import { trpc } from "../_trpc/client";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import React, { useState } from "react";
-import PokemonRow from "../compoenents/pokemon-row";
+import PokemonRow from "../components/pokemon-row";
 import { IconButton } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function PartOne(): React.ReactElement {
   });
 
   return (
-    <div className="flex flex-col justify-center items-center p-12 gap-12">
+    <div className="flex flex-col justify-center items-center p-12 gap-12 w-full">
       <Link href="/">
         <IconButton>
           <HomeIcon fontSize="large" />

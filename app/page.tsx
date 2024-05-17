@@ -11,7 +11,7 @@ export default function Home() {
         </IconButton>
         <div className="text-4xl">Pokedex Clone by Aviral Tuteja</div>
       </div>
-      <div>
+      <div className="gap-2 flex  items-center justify-center">
         <Link href="/part-one">
           <Button variant="outlined">Part One</Button>
         </Link>
@@ -27,13 +27,12 @@ export default function Home() {
         with Typescript and App Router, Tailwind, Material UI
       </div>
       <div className="text-center">
-        No styles have been added here because of some personal issues. To check
-        out my front end skills, visit{" "}
+        Visit{" "}
         <span className="text-xl text-[#1212fe] ">
           <Link href="https://aviraltuteja.netlify.app/">My Portfolio</Link>
         </span>{" "}
-        which has been made completely in React using MaterialUI and Framer
-        Motion.
+        for more, which has been made completely in React using MaterialUI and
+        Framer Motion.
       </div>
     </main>
   );

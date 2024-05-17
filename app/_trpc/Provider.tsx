@@ -10,7 +10,8 @@ export default function Provider({ children }: { children: React.ReactNode }) {
   const [trpcClient] = useState(() =>
     trpc.createClient({
       links: [
-        httpBatchLink({ url: "https://pokemon-aviral.vercel.app/api/trpc" }),
+        // httpBatchLink({ url: "https://pokemon-aviral.vercel.app/api/trpc" }),
+        httpBatchLink({ url: "http://localhost:3000/api/trpc" }),
       ],
     })
   );
